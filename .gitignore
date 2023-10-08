@@ -1,0 +1,5 @@
+# dependencies
+chat_app/node_modules
+chat-room-frontend/node_modules
+chat-backend/node_modules
+chat-backend/.env
