@@ -1,7 +1,7 @@
 require("dotenv").config()
 const express = require("express")
 const http = require("http")
-const socketIO = require("socket,io")
+const socketIO = require("socket.io")
 const cors = require("cors")
 const mongoose = require("mongoose")
 const ChatRoom = require("./models/ChatRoom")
