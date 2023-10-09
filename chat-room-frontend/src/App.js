@@ -1,5 +1,5 @@
 // Importing required modules and components
-// start
+
 import React from "react"
 import { AuthProvider } from "./components/AuthContext" // Importing the AuthProvider component
 import AppContent from "./AppContent" // Importing the main AppContent component that contains the application logic
