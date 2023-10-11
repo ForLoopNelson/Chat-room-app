@@ -18,12 +18,13 @@ const io = socketIO(server, {
     origin: "*",
   },
 })
+
 // Middleware for parsing JSON and enabling CORS
 app.use(express.json())
 app.use(cors())
 
 // MongoDB Atlas connection URI
-const mongoURI = `${MONGO_DB}`
+const mongoURI = process.env.MONGO_DB
 
 // Connect to MongoDB Atlas
 mongoose
