@@ -15,7 +15,7 @@ const socket = io("http://localhost:4000")
 // Main AppContent component
 function AppContent() {
   // State variables
-  const [rooms, setRooms] = useState(["General", "Sports", "Coding"])
+  const [rooms] = useState(["General", "Sports", "Coding"])
   const [currentRoom, setCurrentRoom] = useState(null)
   const [messages, setMessages] = useState([])
   const {
