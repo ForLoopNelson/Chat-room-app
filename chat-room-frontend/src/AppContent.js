@@ -15,7 +15,7 @@ const socket = io("http://localhost:4000")
 // Main AppContent component
 function AppContent() {
   // State variables
-  const [rooms] = useState(["General", "Sports", "Coding"])
+  const [rooms, setRooms] = useState(["General", "Sports", "Coding"])
   const [currentRoom, setCurrentRoom] = useState(null)
   const [messages, setMessages] = useState([])
   const {
@@ -121,7 +121,7 @@ function AppContent() {
       {/* If the user is authenticated, display the room list and chat interface, else signup/login */}
       {isAuthenticated ? (
         <>
-          <span>Welcome, {username}</span>
+          <span className="text-adjust">Welcome, {username}</span>
           <button onClick={handleLogout}>Logout</button> {/* Logout button */}
           <ChatRoomList rooms={rooms} joinRoom={joinRoom} />{" "}
           {/* Pass in room list and function as props */}
