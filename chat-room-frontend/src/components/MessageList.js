@@ -8,7 +8,7 @@ const MessageList = ({ messages }) => {
   return (
     <div>
       {/* Header for the message list */}
-      <h2>Messages</h2>
+      <h2 className="message">Messages</h2>
 
       {/* Unordered list to display messages */}
       <ul>
@@ -23,8 +23,7 @@ const MessageList = ({ messages }) => {
             <span className="username">
               {message.user ? message.user.username : "Anonymous"}-
             </span>
-            {/* Display the content of the message */}
-            {message.content}
+            {/* Display the content of the message */}"{message.content}"
           </li>
         ))}
       </ul>
