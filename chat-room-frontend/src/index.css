@@ -12,8 +12,34 @@ code {
     monospace;
 }
 
+.username {
+  font-weight: bold;
+}
+
 .timestamp {
   font-size: 0.8em;
   color: #888;
   margin-right: 10px;
+}
+
+.message {
+  text-decoration: underline 2px solid black;
+  margin-bottom: 10px;
+}
+
+.text-adjust {
+  margin-right: 16px;
+}
+
+button {
+  color: white;
+  background: rgba(34, 35, 34, 0.6);
+  border: 2px solid black;
+  font-size: 0.9rem;
+}
+
+rooms {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border-bottom: 2px solid red;
 }
